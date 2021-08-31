@@ -1,8 +1,8 @@
 FROM nginx:latest
 
 # Set FogLAMP version, distribution, and platform
-ENV FLEDGE_VERSION=1.8.2
-ENV FLEDGE_DISTRIBUTION=ubuntu1804
+ENV FLEDGE_VERSION=1.9.1
+ENV FLEDGE_DISTRIBUTION=ubuntu2004
 ENV FLEDGE_PLATFORM=x86_64
 
 RUN apt update && \ 
@@ -23,10 +23,9 @@ RUN apt update && \
     # You may choose to leave the installation packages in the directory in case you need to troubleshoot
     rm -rf -r /fledge && \
     # General cleanup after using apt
-    #apt autoremove -y && \
     apt clean -y && \
     rm -rf /var/lib/apt/lists/ && \
-	rm -rf /var/www/
+	  rm -rf /var/www/
 
 EXPOSE 80
 
