@@ -11,7 +11,7 @@ docker run -d -p 80:80 --name fledge-gui:1.9.1
 ## View logs
 docker logs -f fledge-gui
 
-## To view the GUI in you  web browser go to 
+## To view the GUI in your  web browser go to 
 http://localhost
 
 ![Image FLEDGE GUI](./docs/fledge-gui-south.png)
