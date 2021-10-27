@@ -1,7 +1,7 @@
 FROM nginx:latest
 
 # Set FogLAMP version, distribution, and platform
-ENV FLEDGE_VERSION=1.9.1
+ENV FLEDGE_VERSION=1.9.2
 ENV FLEDGE_DISTRIBUTION=ubuntu2004
 ENV FLEDGE_PLATFORM=x86_64
 

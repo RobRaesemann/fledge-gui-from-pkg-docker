@@ -3,10 +3,10 @@ The FLEDGE GUI allows you to configure a FLEDGE IIoT node. South plugins connect
 
 
 ## Build the Docker Image
-docker build --rm -t fledge-gui:1.9.1 .
+docker build --rm -t fledge-gui .
 
 ## Run detached with autorestart
-docker run -d -p 80:80 --name fledge-gui:1.9.1
+docker run -d -p 80:80 --name fledge-gui
 
 ## View logs
 docker logs -f fledge-gui
